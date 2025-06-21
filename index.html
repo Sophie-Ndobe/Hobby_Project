@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Hobby Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Sevillana&display=swap" rel="stylesheet">
+
 <style>
 
     h1,h2,h3 {
         text-align: center;
     }
 
+    h2,h3 {
+        font-family: "Sevillana", cursive;
+        font-weight: 600;
+        font-style: normal;
+    }
+
     img {
         max-width: 100%;
     }
+
+    .theme-button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 5px 8px;
+        border-radius: 10px;
+    }
+
     .container {
         display: block;
         margin: 0 auto;
         max-width: 600px;
         background-color: aquamarine;
-    }
-
-    .advert-text {
-        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
     }
 
     .drawing-materials-image {
@@ -37,10 +55,28 @@
     .grid img{
         border-radius: 10px;
     }
+
+    .advert-text{
+        margin-bottom: 20px;
+    }
+
+    .advert-text p {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .connect-button {
+        display: block;
+        margin: 0 auto;
+        padding: 8px 14px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
 </style>
 </head>
 <body>
-    <button>Change theme</button>
+    <button class="theme-button">Change theme</button>
     <div class="container">
         <h1>👩‍🎨Artistic Connection</h1>
         <h2>Where great imagination becomes reality!!!</h2>
@@ -69,8 +105,9 @@
             <p>For community support!!!</p>
         </div>
 
-        <button>Let's Connect</button>
+        <button class="connect-button">Let's Connect</button>
     </div>
+
 
 </body>
 </html>
