@@ -13,6 +13,7 @@
 
     body {
         background-image: url(https://media.istockphoto.com/id/646398684/photo/black-and-white-stone-textures.jpg?s=612x612&w=0&k=20&c=AryGSIRNNVnq_exRwbjDc3Zrr1nSOm3UKzGLqztzMjA=);
+        opacity: 0.9;
     }
 
     h2 {
@@ -39,6 +40,7 @@
 
     .dark {
        background-image: url(https://media.istockphoto.com/id/1069060408/photo/black-background-seamless-texture.jpg?s=612x612&w=0&k=20&c=nvIybJ1F17DjBMAHaQNpB8W56QZ8JB0eEY0GaXTPZbk=);
+       opacity: 0.9;
 
     }
 
@@ -187,9 +189,21 @@
             }
         }
 
+        function connectMessage() {
+            let name = prompt("Enter your name?");
+            let email = prompt("Enter your email address");
+
+            alert("Thank you " + name + ", we will connect with you shortly!!!❤️");
+        }
+
 
         let themeButton = document.querySelector(".theme-button");
         themeButton.addEventListener('click', changeTheme);
+
+        let connectButton = document.querySelector(".connect-button");
+        connectButton.addEventListener('click', connectMessage);
+
+
     </script>
 
 
