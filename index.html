@@ -14,6 +14,7 @@
     body {
         background-image: url(https://media.istockphoto.com/id/646398684/photo/black-and-white-stone-textures.jpg?s=612x612&w=0&k=20&c=AryGSIRNNVnq_exRwbjDc3Zrr1nSOm3UKzGLqztzMjA=);
         opacity: 0.9;
+        background-color: aquamarine;
     }
 
     h1,h2,h3 {
@@ -28,6 +29,10 @@
 
     img {
         max-width: 100%;
+    }
+
+    .dark {
+       background-image: url(https://media.istockphoto.com/id/1069060408/photo/black-background-seamless-texture.jpg?s=612x612&w=0&k=20&c=nvIybJ1F17DjBMAHaQNpB8W56QZ8JB0eEY0GaXTPZbk=);
     }
 
     .theme-button {
@@ -123,6 +128,18 @@
 
         <button class="connect-button">Let's Connect</button>
     </div>
+
+    <script>
+
+        function changeTheme(){
+            let body = document.querySelector("body");
+            body.classList.add("dark");
+        }
+
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener('click', changeTheme);
+    </script>
 
 
 </body>
