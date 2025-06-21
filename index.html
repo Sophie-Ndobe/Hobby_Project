@@ -38,6 +38,14 @@
         max-width: 100%;
     }
 
+    footer {
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        margin-top: 5px;
+
+    }
+
     .dark {
        background-image: url(https://media.istockphoto.com/id/1069060408/photo/black-background-seamless-texture.jpg?s=612x612&w=0&k=20&c=nvIybJ1F17DjBMAHaQNpB8W56QZ8JB0eEY0GaXTPZbk=);
        opacity: 0.9;
@@ -67,6 +75,10 @@
     .dark .connect-button:hover {
         background-color: #4d516d;
         color:#fcfcff;
+    }
+
+    .dark .footer-text {
+        color: #fcfcff;
     }
 
     .theme-button {
@@ -118,6 +130,11 @@
         transform: scale(1.1) rotate(-4deg);
     }
 
+    .art-room-info {
+        line-height: 30px ;
+
+    }
+
     .advert-text{
         margin-bottom: 20px;
     }
@@ -142,6 +159,18 @@
         color: #4d516d;
     }
 
+    .footer-text {
+        color: rgb(7, 7, 7);
+    }
+
+    .github-image {
+        transition: all 150ms ease-in-out;
+    }
+
+    .github-image:hover {
+        transform: scale(1.5) rotate(5deg);
+    }
+
 </style>
 </head>
 <body>
@@ -162,9 +191,11 @@
 
         <h4>The Art Room SA</h4>
 
-        <p>Join the Art Room founded in 1992 by, artist and writer, Diane Welvering, and have been located in Pretoria East ever since. They work extremely hard to help cultivate the inner artist in all students who visit The Art Room. Using a variety of mediums in our well-equipped studio, we offer workshops and classes to enhance the creative spark and spirit in everyone. Make sure you do not miss out on any of the fun by joining.</p>
+        <span class="art-room-info">
+            <p>Join the Art Room founded in 1992 by, artist and writer, Diane Welvering, and have been located in Pretoria East ever since. They work extremely hard to help cultivate the inner artist in all students who visit The Art Room. Using a variety of mediums in our well-equipped studio, we offer workshops and classes to enhance the creative spark and spirit in everyone. Make sure you do not miss out on any of the fun by joining.</p>
+        </span>
 
-        <a href="https://www.theartroomsa.com/" target="blank">Visit the Art Room</a>
+        <a href="https://www.theartroomsa.com/" target="_blank">Visit the Art Room</a>
 
         <h3>❤️❤️❤️It is all for the love of art❤️❤️❤️</h3>
 
@@ -176,6 +207,14 @@
 
         <button class="connect-button">Let's Connect</button>
     </div>
+
+    <footer>
+        <span class="footer-text">This project is coded with ❤️ Sophie ndobe by</span>
+        <a href="https://github.com/Sophie-Ndobe" target="_blank" class="github-link">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/168/631/original/github-mark.png?1750534661" alt="Github logo picture" width="30px" class="github-image" />
+        </a>
+
+    </footer>
 
     <script>
 
@@ -203,9 +242,7 @@
         let connectButton = document.querySelector(".connect-button");
         connectButton.addEventListener('click', connectMessage);
 
-
     </script>
-
 
 </body>
 </html>
